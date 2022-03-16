@@ -6,8 +6,8 @@
 // fr : Code encapsulé des modules (partage uniquement le minimum)
 
 const names = require('./4-names');
-const sayHi = require('./5-utils');
-const data = require('./alternative-flavor');
+const sayHi = require('./5-utils')
+// console.log(names);
 
 sayHi("Cherif Diouf");
 sayHi(names.maleeq);

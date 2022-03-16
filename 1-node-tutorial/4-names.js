@@ -5,10 +5,16 @@
 // fr : CommonJS, chaque fichier est un module (par défaut)
 // fr : Code encapsulé des modules (partage uniquement le minimum)
 
-const names = require('./4-names');
-const sayHi = require('./5-utils');
-const data = require('./alternative-flavor');
 
-sayHi("Cherif Diouf");
-sayHi(names.maleeq);
-sayHi(names.abdoul);
+// local          = locale
+const secret = "Super SECRET";
+
+// share          = partager
+const abdoul = "Abdoul";
+const maleeq = "Maleeq";
+
+
+module.exports = { abdoul, maleeq };
+
+console.log(module);
+
